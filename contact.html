@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <form action="/send_contact" method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="nom_personne">Nom</label></td>
+            <td><input type="text" name="firstname" id="nom_personne"></td>
+          </tr>
+          <tr>
+            <td><label for="prenom_personne">Prénom</label></td>
+            <td><input type="text" name="lastname" id="prenom_personne"></td>
+          </tr>
+          <tr>
+            <td><label for="email_personne">Adresse e-mail</label></td>
+            <td><input type="email" name="email" id="email_personne"></td>
+          </tr>
+          <tr>
+            <td><label for="tel_personne">Numéro de téléphone</label></td>
+            <td><input type="tel" name="tel" id="tel_personne"><br/></td>
+          </tr>
+          <tr>
+            <td><label for="canal_personne">Canal de contact préféré</label></td>
+            <td>
+              <select name="channel" id="canal_personne">
+                    <option value="email">Email</option>
+                    <option value="telephone">Téléphone</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <label for="message_personne">Message :</label><br/>
+      <textarea name="message" rows="8" cols="80" id="message_personne"></textarea><br/>
+      <button type="submit">Valider</button>
+    </form>
+  </body>
+</html>
